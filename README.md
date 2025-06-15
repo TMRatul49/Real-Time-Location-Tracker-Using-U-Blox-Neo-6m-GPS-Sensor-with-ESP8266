@@ -1,5 +1,3 @@
-# Real-Time-Location-Tracker-Using-U-Blox-Neo-6m-GPS-Sensor-with-ESP8266 & Firebase
-
 # 📍 Real-Time GPS Location Tracker with ESP8266 & Firebase
 
 A lightweight and accurate real-time location tracking system using **U-Blox Neo 6M GPS module**, **ESP8266 NodeMCU**, and **Firebase Realtime Database**. It continuously pushes live latitude and longitude data to Firebase—ideal for location-aware IoT projects, asset tracking, or DIY geofencing experiments.
