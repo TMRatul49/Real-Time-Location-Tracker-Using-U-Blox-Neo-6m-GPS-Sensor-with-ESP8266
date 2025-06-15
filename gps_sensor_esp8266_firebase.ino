@@ -3,8 +3,8 @@
 #include <SoftwareSerial.h>
 #include <TinyGPS++.h>
 
-const char* ssid = "Robo Tech Valley";
-const char* password = "roboninja";
+const char* ssid = "Your WiFi SSID";
+const char* password = "Your WiFi Password";
 
 // Create Firebase config and auth objects
 FirebaseConfig config;
@@ -33,14 +33,12 @@ void setup() {
   Serial.println("\nWiFi Connected");
 
   // Firebase configuration
-  config.api_key = "AIzaSyCmwq3nK_ls88J-NYs8Gn1qSTQiI4v6EtI";
-  config.database_url = "https://neo-6m-gps-with-esp8266-default-rtdb.asia-southeast1.firebasedatabase.app";
+  config.api_key = "Your Firebase Project API Key";
+  config.database_url = "Your Firebase Project Database URL";
 
   // Anonymous sign-in (no email/password)
-  // auth.user.email = "tmmehrabhasan@gmail.com";
-  // auth.user.password = "123456789";
-  auth.user.email = "robi001.khairul@gmail.com"; 
-  auth.user.password = "PassworD2002@";
+  auth.user.email = "Your Firebase Project User Mail";
+  auth.user.password = "Your Firebase Project User Password";
 
   Firebase.begin(&config, &auth);
   Firebase.reconnectWiFi(true);
